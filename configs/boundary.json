@@ -1,0 +1,20 @@
+{
+  "seed": 23456,
+  "epochs": 60,
+  "batch": 4,
+  "updates": 25560,
+  "optimizer": {
+    "type": "SGD",
+    "lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 0.0005
+  },
+  "scheduler": "poly exponent .9 by update",
+  "training_crop": 512,
+  "inference_native_size": 1024,
+  "target_boundary_distance": 5,
+  "directions": 8,
+  "offset_scale": 2,
+  "boundary_threshold": 0.5,
+  "validation_reference": "same-seed lovasz/raw validation predictions"
+}

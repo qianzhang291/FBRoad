@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fbroad"
+version = "0.1.0"
+description = "FBRoad: fusion and boundary refinement for road extraction"
+requires-python = ">=3.10"
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = ["torch>=2.7,<2.8", "torchvision>=0.22,<0.23", "numpy>=2,<3", "opencv-python-headless>=4.10", "scipy>=1.14", "scikit-image>=0.25", "yacs==0.1.8", "PyYAML>=6"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+license-files = ["LICENSE", "licenses/*.txt"]

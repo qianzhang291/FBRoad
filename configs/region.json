@@ -1,0 +1,16 @@
+{
+  "seed": 23456,
+  "arm": "ema",
+  "epochs": 30,
+  "batch": 8,
+  "updates": 6390,
+  "learning_rate": {
+    "epochs_1_to_16": 0.0001,
+    "epochs_17_to_30": 1e-05
+  },
+  "optimizer": "Adam defaults",
+  "late_auxiliary_start_epoch": 16,
+  "contrast_weight": 0.01,
+  "ema_decay": 0.99,
+  "selection": "maximum validation global road IoU; earlier ties"
+}
